@@ -3,6 +3,6 @@ let accEmail = "Shailesh@123.com"       // always use let because var having iss
 var accCity = "Jaipur"
 
 accState = "MH"         // we can declare var like this but it is not recommandable at all
-let country             // if I run it without assign any value then it give udefined value (not null)
+let country             // if I run it without assign any value then it give undefined value (not null)
 
 console.table([accId,accEmail,accCity,accState,country]) //we can use this output format to show output in tabular form..
