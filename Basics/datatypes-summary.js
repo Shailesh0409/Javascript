@@ -1,6 +1,6 @@
-/* ***Datatypes*** */
+//                  Primitive => Stack || Non-Primitive => Heap
 
-/*               *****Primitive****
+/*               *****Primitive****    store on STACK
 
     1) Number           4) String
     2) BigInt           5) Undefined        7) Symbol(Unique)
@@ -26,7 +26,7 @@ console.log(Num === value);    // False
 const bigNum = 56382399n     // BigInt
 //console.log(typeof bigNum); 
 
-/*               *****Non-Primitive/ Reference Type****   
+/*               *****Non-Primitive/ Reference Type****    Store on HEAP
         1) Array
         2) Object 
         3) Function
@@ -52,3 +52,23 @@ const myFun = function () {                        // Function
                     
 console.log(typeof myFun);       
          
+let myName = "Shailesh@gmail"
+let anotherName = myName
+anotherName = "agarmore@gmail"
+
+console.log(myName);                // Shailesh@gmail
+console.log(anotherName);           // agarmore@gmail
+
+let userOne = {
+    email : "shailesh.com",
+    upi : "Shailesh@ybl"
+}
+
+let userTwo = userOne
+console.log(userOne.email);     // shailesh.com
+
+
+userTwo.email = "user.com"
+
+console.log(userOne.email);    // user.com
+console.log(userTwo.email);    // user.com
