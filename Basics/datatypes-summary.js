@@ -72,3 +72,6 @@ userTwo.email = "user.com"
 
 console.log(userOne.email);    // user.com
 console.log(userTwo.email);    // user.com
+
+console.log(userOne);         // { email: 'user.com', upi: 'Shailesh@ybl' }
+console.log(userTwo);         // { email: 'user.com', upi: 'Shailesh@ybl' }
